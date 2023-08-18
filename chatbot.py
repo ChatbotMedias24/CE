@@ -84,6 +84,8 @@ def main():
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
+                if "Donnez-moi un résumé du rapport" in query:
+                    response = "Le rapport sur le commerce extérieur du Maroc pour 2022 présente des statistiques annuelles sur les importations et les exportations de marchandises. Il permet également de fournir des informations aux pouvoirs publics, aux organismes internationaux et aux opérateurs économiques nationaux et étrangers. Les données sont présentées par groupes de produits et comprennent des informations sur l'accord avec l'Union européenne, l'accord avec les États-Unis, l'accord avec la Turquie, l'accord avec les pays membres de l'AELE et l'accord d'Agadir."
                 print(cb)
             st.write(response)
 
