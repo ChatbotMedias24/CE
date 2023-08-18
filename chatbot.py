@@ -34,7 +34,7 @@ with textcontainer:
     
 st.sidebar.subheader("Suggestions:")
 questions = [
-        "Donne moi un résumé du rapport ",
+        "Donnez-moi un résumé du rapport ",
         "Quels sont les secteurs économiques qui ont connu la plus forte croissance des exportations en 2022 ?",
         "Quels sont les principaux défis auxquels est confronté le commerce extérieur du Maroc en 2022 ?",
         "Comment les échanges commerciaux du Maroc avec les pays membres de l'Union européenne ont-ils évolué depuis la sortie du Royaume-Uni de l'UE en 2021 ?"
